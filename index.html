@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>calculator</title>
+  <title>calculator !</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,19 +11,48 @@
 </head>
 <body>
 
-  <input type="text" id="firstValue" />
-  <input type="text" id="secondValue"/>
-<button id="addButton" class="btn btn-primary btn-lg">+</button>
-<button id="subtractButton" class="btn btn-primary btn-lg">-</button>
-<button id="divideButton" class="btn btn-primary btn-lg">/</button>
-<button id="multiplyButton" class="btn btn-primary btn-lg">*</button>
-<button id="remainderButton" class="btn btn-primary btn-lg">%</button>
-<button id="incrementButton" class="btn btn-primary btn-lg">++</button>
-<button id="decrementButton" class="btn btn-primary btn-lg">--</button>
-<button id="clearButton" class="btn btn-primary btn-lg">clear</button>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="row calculator_border">
+        <div class="col-sm-12">
+          <input class="value_box" type="text" id="firstValue" placeholder="insert value one" />
+        </div>
+        <div class="col-sm-12">
+            <input class="value_box" type="text" id="secondValue" placeholder="insert value two" />
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <button id="addButton" class="btn button_style btn-lg">+</button>
+          </div>
+          <div class="col-sm-6">
+            <button id="subtractButton" class="btn button_style btn-lg">-</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <button id="divideButton" class="btn button_style btn-lg">/</button>
+          </div>
+          <div class="col-sm-6">
+            <button id="multiplyButton" class="btn button_style btn-lg">*</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <button id="remainderButton" class="btn button_style btn-lg">%</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <button id="clearButton" class="btn button_style btn-lg">c</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <!-- Scripts go here. -->
-  <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch"></script>
-  <script src="js/calc.js"></script>
+<script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch"></script>
+<script src="js/calc.js"></script>
 </body>
 </html>
